@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: bylov/bylov.com
+  branch: main
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "about"
+    label: "About"
+    files:
+      - file: "src/content/about.md"
+        label: "About Me"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
