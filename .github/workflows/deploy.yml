@@ -8,11 +8,13 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write       # <-- required for deploy-pages@v4
+  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages    # <-- REQUIRED
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
