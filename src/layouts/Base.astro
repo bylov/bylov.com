@@ -1,5 +1,4 @@
 ---
-import '../styles/global.css';
 const { title = 'Hasse Bylov', description = 'Personal CV Website' } = Astro.props;
 ---
 <html lang="en">
@@ -8,6 +7,7 @@ const { title = 'Hasse Bylov', description = 'Personal CV Website' } = Astro.pro
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="stylesheet" href="/bylov.com/src/styles/global.css" />
   </head>
   <body class="bg-zinc-50 text-zinc-900 antialiased">
     <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-zinc-200 p-4 mb-6">
@@ -15,9 +15,7 @@ const { title = 'Hasse Bylov', description = 'Personal CV Website' } = Astro.pro
         <a href="/" class="font-bold text-lg">Hasse Bylov</a>
         <nav class="space-x-4 text-sm">
           <a href="/" class="hover:text-primary">Home</a>
-          <a href="/projects" class="hover:text-primary">Projects</a>
-          <a href="/resume" class="hover:text-primary">Resume</a>
-          <a href="/admin/" class="hover:text-primary">Admin</a>
+          <a href="https://linkedin.com/in/bylov" class="hover:text-primary">LinkedIn</a>
         </nav>
       </div>
     </header>
